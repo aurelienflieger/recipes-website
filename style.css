@@ -48,6 +48,7 @@
   --font-primary: "Young Serif", serif;
   --font-secondary: "Outfit", sans-serif;
   --fw-regular: 400;
+  --fw-semibold: 500;
   --fw-bold: 700;
   --fs-xl: 2.5rem;
   --fs-lg: 1.75rem;
@@ -74,4 +75,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.body {
+  background-color: var(--stone-100);
+}
+
+.recipe__title {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-m);
+  letter-spacing: var(--ls-s);
+  color: var(--stone-900);
+}
+
+.recipe__description {
+  color: var(--stone-600);
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+}
+
+.recipe__preparation {
+  background-color: var(--rose-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  gap: var(--spacing-2xl);
+  font-family: var(--font-secondary);
+}
+
+.recipe__preparation-title {
+  color: var(--rose-800);
+  font-size: var(--fs-md);
+}
+
+.recipe__list--preparation {
+  color: var(--stone-600);
+}
+
+.text-emphasis {
+  font-weight: var(--fw-bold);
+}
+
+.recipe__preparation-item {
+  font-weight: var(--fw-regular);
+}
+
+.recipe__preparation-item::marker {
+  color: var(--rose-800);
 }
