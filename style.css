@@ -78,11 +78,6 @@
   padding: 0;
 }
 
-/* body {
-  background-color: var(--stone-100);
-}
-*/
-
 .recipe__section {
   margin: var(--spacing-sm) var(--spacing-xl);
 }
@@ -90,6 +85,7 @@
 .recipe {
   display: flex;
   flex-direction: column;
+  background-color: var(--white);
 }
 
 .recipe__header {
@@ -229,4 +225,27 @@
 .recipe__nutrition {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+  }
+  .recipe {
+    width: 50%;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
+    max-width: 800px;
+  }
+  .recipe,
+  .recipe__picture {
+    border-radius: 20px;
+  }
+
+  .recipe__picture {
+    margin: var(--spacing-sm) var(--spacing-xl);
+  }
 }
